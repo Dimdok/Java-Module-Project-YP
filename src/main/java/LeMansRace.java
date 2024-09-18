@@ -32,7 +32,7 @@ public class LeMansRace {
                 }
 
                 // проверка на скорость
-                if (speed >= minSpeed && speed < maxSpeed) {
+                if (speed >= minSpeed && speed <= maxSpeed) {
                     race.doTheRace(new Car(brand, speed));
                     break;
                 } else {
