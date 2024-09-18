@@ -7,11 +7,11 @@ public class Race {
     public void doTheRace(Car car) {
         // Непонятно зачем вычислять дистанцию.
         // При одинаковом времени победитель - это всегда машина с самой большой скоростью
-        int newCarDistance = car.speed * raceTime;
+        int newCarDistance = car.getSpeed() * raceTime;
 
         if (newCarDistance > winnerDistance) {
             winnerDistance = newCarDistance;
-            winnerBrand = car.brand;
+            winnerBrand = car.getBrand();
         }
     }
 }
